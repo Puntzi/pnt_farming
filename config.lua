@@ -1,5 +1,6 @@
 Config = Config or {}
 
+Config.UseOxInventory = true
 Config.Locale = 'en'
 
 Config.DrawDistance  = 5.0
