@@ -13,7 +13,7 @@ else
     RegisterNetEvent('pnt_farming:giveItem', function(item)
         local xPlayer = ESX.GetPlayerFromId(source)
         if xPlayer.canCarryItem(item, 1) then 
-            xPlayer.addInventoryItem(item)
+            xPlayer.addInventoryItem(item, 1)
         else 
             xPlayer.showNotification(_U('cant_carry'))
         end
