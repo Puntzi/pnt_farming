@@ -1,18 +1,17 @@
 Config = Config or {}
 
-Config.UseOxInventory = true
 Config.Locale = 'en'
 
 Config.DrawDistance  = 5.0
 Config.MarkerType    = 1
 Config.MarkerSize    = {x = 2.5, y = 2.5, z = 0.5}
 Config.MarkerColor   = {r = 60, g = 179, b = 113, a = 255}
+Config.UseOxInventory = false
 
 Config.DistanceToInteract = 2.0
 Config.TimeToRecolect = 5000 --- In miliseconds
 
 Config.Farms = {
-
     Pears = {
         Blip = {
             active  = true,
@@ -62,4 +61,45 @@ Config.Farms = {
 
         ItemName = 'apple',
     }
+}
+
+Config.ProcessZone = {
+    Blip = {
+        active  = true,
+        coords  = vec3(96.10, 6363.17, 31.36),
+        sprite  = 267,
+        display = 4,
+        scale   = 1.0,
+        color   = 43,
+    },
+
+    Zones = {
+        vec3(96.10, 6363.17, 31.36)
+    },
+
+    Items = {
+        'pear',
+        'apple'
+    },
+
+    ItemBox = 'box_fruits',
+
+    Quantity = 5
+}
+
+
+Config.SellZones = {
+    Blip = {
+        active  = true,
+        sprite  = 267,
+        display = 4,
+        scale   = 0.5,
+        color   = 43,
+    },
+
+    Zones = {
+        {coords = vec3(1087.99, 6508.29, 21.04), sellPrice = 20},
+        {coords = vec3(46.66, -1749.65, 29.61), sellPrice = 40}
+    }
+
 }
