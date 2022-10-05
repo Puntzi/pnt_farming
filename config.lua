@@ -6,7 +6,7 @@ Config.DrawDistance  = 5.0
 Config.MarkerType    = 1
 Config.MarkerSize    = {x = 2.5, y = 2.5, z = 0.5}
 Config.MarkerColor   = {r = 60, g = 179, b = 113, a = 255}
-Config.UseOxInventory = false
+Config.UseOxInventory = true
 
 Config.DistanceToInteract = 2.0
 Config.TimeToRecolect = 5000 --- In miliseconds
